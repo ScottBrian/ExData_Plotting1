@@ -38,9 +38,9 @@ plot(x = plotdata[,"Date"], y = as.numeric(plotdata[,"Voltage"]), type="l", xlab
 # bottom left plot
 plot(x = plotdata[,"Date"], y = as.numeric(plotdata[,"Sub_metering_1"]), type="n", xlab = " ", ylab = "Energy sub metering")
 lines(x = plotdata[,"Date"], y = as.numeric(plotdata[,"Sub_metering_1"]), type="l", col = "black")
-lines(x = plotdata[,"Date"], y = as.numeric(plotdata[,"Sub_metering_2"]), type="l", col = "green")
+lines(x = plotdata[,"Date"], y = as.numeric(plotdata[,"Sub_metering_2"]), type="l", col = "red")
 lines(x = plotdata[,"Date"], y = as.numeric(plotdata[,"Sub_metering_3"]), type="l", col = "blue")
-legend("topright", col = c("black", "green", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty = "n", lty = 1)
+legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty = "n", lty = 1)
 
 # bottom right plot
 plot(x = plotdata[,"Date"], y = as.numeric(plotdata[,"Global_reactive_power"]), type="l", xlab = "datetime", ylab = "Global_reactive_power")
